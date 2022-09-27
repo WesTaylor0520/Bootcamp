@@ -42,18 +42,22 @@ def response_2(first_n, second_n, greeting):
     return updated_greeting_message
 
 
-first_name = ""
-second_name = ""
-greeting_message = "Welcome"
-program = True
-while program:
-    response = question()
+def main():
+    first_name = ""
+    second_name = ""
+    greeting_message = "Welcome"
+    program = True
+    while program:
+        response = question()
 
-    if response == "1":
-        first_name, second_name = response_1()
+        if response == "1":
+            first_name, second_name = response_1()
 
-    if response == "2":
-        greeting_message = response_2(first_name, second_name, greeting_message)
+        if response == "2":
+            greeting_message = response_2(first_name, second_name, greeting_message)
 
-    if response == "3":
-        program = False
+        if response == "3":
+            program = False
+
+
+main()
