@@ -60,4 +60,5 @@ def main():
             program = False
 
 
-main()
+if __name__ == "__main__":
+    main()
